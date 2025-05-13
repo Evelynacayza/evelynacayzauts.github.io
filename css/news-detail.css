@@ -1,0 +1,98 @@
+/* === Detail Hero === */
+.detail-hero {
+    background: linear-gradient(45deg, rgba(0, 60, 113, 0.9), rgba(0, 119, 204, 0.9)),
+                url('../assets/images/news-detail-hero.jpg') center/cover fixed;
+    padding-top: 100px;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+/* === News Content === */
+.news-detail-content {
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-top: -100px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.news-detail-content h2 {
+    font-size: 2rem;
+    margin: 2rem 0 1.5rem;
+    color: var(--bs-primary);
+    }
+
+.news-detail-content h3 {
+    font-size: 1.75rem;
+    margin: 1.75rem 0 1.25rem;
+}
+
+.news-detail-content img {
+    margin: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.news-detail-content blockquote {
+    border-left: 4px solid var(--bs-primary);
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #666;
+}
+
+.news-detail-content ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.news-detail-content li {
+    margin-bottom: 0.5rem;
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    text-align: center;
+    display: block;
+}
+
+.social-share i {
+    transition: all 0.3s ease;
+    color: var(--bs-primary);
+}
+
+.social-share i:hover {
+    transform: translateY(-2px);
+    color: var(--bs-primary-dark);
+}
+
+
+/* === Back Button === */
+.btn-back {
+    background: var(--primary-color);
+    color: white !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .news-detail-content {
+        margin-top: -60px;
+        font-size: 1rem;
+    }
+
+    .detail-hero {
+        min-height: 50vh;
+        padding-top: 80px;
+    }
+
+    .news-footer .d-flex {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
